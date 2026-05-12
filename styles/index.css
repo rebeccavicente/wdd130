@@ -1,0 +1,115 @@
+body {
+    background-image: url("images/yo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    gap: 150px;
+    font-size: 30px;
+
+}
+
+nav a {
+    color: white;
+    font-size: 30px;
+    padding: 0px;
+
+}
+
+.main-title {
+    color: darkorchid;
+    text-align: center;
+    width: 900px;
+    padding: 60px;
+    margin: 0 auto;
+    font-size: 60px;
+
+}
+
+.section {
+    overflow: auto;
+    margin-bottom: 100px;
+}
+
+.subtitle {
+    color: white;
+    font-size: 36px;
+    padding: 20px;
+
+}
+
+#pirata {
+    padding-top: 150px;
+    color: gold;
+}
+
+#dunas {
+    padding-top: 50px;
+    color: lightblue;
+    font-size: 45px;
+}
+
+#praia {
+    padding-top: 100px;
+    color: pink;
+}
+
+#trilha {
+    padding-top: 80px;
+    color: lightgreen;
+}
+
+#ponte {
+    padding-top: 120px;
+    color: orange;
+}
+
+#balada {
+    padding-top: 60px;
+    color: violet;
+    font-size: 50px;
+}
+
+.image-one {
+    float: left;
+    width: 600px;
+    height: 500px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.image-two {
+    float: right;
+    width: 600px;
+    height: 700px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.image-three {
+    float: left;
+    width: 600px;
+    height: 700px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: white;
+    padding-top: 100px;
+
+}
+
+p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: darkorchid;
+}
+
+p {
+    padding: 10px;
+}

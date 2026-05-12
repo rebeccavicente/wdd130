@@ -12,13 +12,6 @@ body {
     background-attachment: fixed;
 }
 
-/* MAIN */
-
-main {
-    max-width: 840px;
-
-}
-
 main h1 {
     color: white;
     text-align: center;
@@ -26,7 +19,7 @@ main h1 {
 }
 
 main img {
-    width: 150px;
+    width: 300px;
     height: auto;
     text-align: left;
 }
@@ -34,32 +27,29 @@ main img {
 main p {
     color: white;
     padding: 0;
-    width: 840px;
+    width: 900px;
     font-size: 24px;
 }
 
-/* ASIDE */
-
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: white;
-    color: black;
+aside h2 {
+    color: white;
     text-align: center;
+    margin: 100px 10px 100px 10px;
 }
 
 aside img {
-    width: 200px;
+    width: 500px;
     height: auto;
     text-align: center;
     display: block;
     margin: 0 auto;
 }
 
-p {
-    padding: 0;
+aside p {
+    color: white;
+
+    font-size: 24px;
+    text-align: center;
 }
 
 footer {
