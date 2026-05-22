@@ -1,7 +1,7 @@
-html,
-body {
-    min-height: 100%;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -29,7 +29,8 @@ nav a {
 
 main {
     max-width: 840px;
-
+    margin: 40px auto;
+    padding: 20px;
 }
 
 main h1 {
@@ -38,49 +39,63 @@ main h1 {
     margin: 10px 10px 100px 10px;
 }
 
+/* IMAGE */
+
 main img {
     width: 150px;
     height: auto;
-    text-align: left;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin-left: 10px;
 }
 
+/* PARAGRAPH */
+
 main p {
-    color: white;
-    padding: 0;
-    width: 840px;
-    font-size: 24px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
 }
 
 /* ASIDE */
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: white;
-    color: black;
+    width: 20em;
     text-align: center;
+    position: relative;
+    /* 🔥 REQUIRED for absolute h2 */
 }
 
 aside img {
     width: 200px;
     height: auto;
-    text-align: center;
     display: block;
     margin: 0 auto;
 }
 
-p {
-    padding: 0;
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
+
+/* FOOTER */
 
 footer {
     margin-top: 15px;
     border-top: 1px solid black;
     text-align: center;
+}
 
+/* CLASS SELECTORS */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+    /* 🔥 REQUIRED */
 }
