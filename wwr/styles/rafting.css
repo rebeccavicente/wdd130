@@ -61,7 +61,6 @@ article {
     padding: 8px;
 }
 
-article,
 section h2 {
 
     background-color: var(--accent1-color);
@@ -82,6 +81,7 @@ section h2 {
     display: block;
     width: 100%;
     height: auto;
+
 }
 
 h1 {
@@ -96,8 +96,12 @@ h1 {
 }
 
 .hero article {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
     position: absolute;
-    top: 120px;
+    top: 350px;
+    background-color: rgba(38, 70, 83, 0.85);
 }
 
 .hero article img {
