@@ -2,6 +2,7 @@
     --primary-color: white;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
+    --overlay-color: rgba(38, 70, 83, 0.8);
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -53,7 +54,7 @@ header nav {
 }
 
 nav a {
-    color: white;
+    color: var(--primary-color);
     background-color: var(--accent2-color);
     text-decoration: none;
     padding: 12px 18px;
@@ -61,7 +62,7 @@ nav a {
 }
 
 nav a:visited {
-    color: white;
+    color: var(--primary-color);
 }
 
 /* HEADINGS */
@@ -69,7 +70,7 @@ nav a:visited {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: white;
+    color: var(--primary-color);
 }
 
 /* GENERAL SPACING */
@@ -98,7 +99,7 @@ article {
     top: 20px;
     width: 100%;
     text-align: center;
-    background-color: rgba(38, 70, 83, 0.8);
+    background-color: var(--overlay-color);
     padding: 16px;
 }
 
@@ -107,8 +108,8 @@ article {
     top: 350px;
     left: 20px;
     right: 20px;
-    background-color: rgba(38, 70, 83, 0.85);
-    color: white;
+    background-color: var(--overlay-color);
+    color: var(--primary-color);
     padding: 20px;
 }
 
@@ -122,7 +123,7 @@ article {
 
 section h2 {
     background-color: var(--accent1-color);
-    color: white;
+    color: var(--primary-color);
     text-align: center;
     padding: 20px;
 }
