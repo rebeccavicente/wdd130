@@ -78,8 +78,8 @@ h2 {
 p,
 section,
 article {
-    margin: 16px;
-    padding: 8px;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* HERO */
@@ -167,26 +167,155 @@ section h2 {
     font-size: 14px;
 }
 
-/* FOOTER */
+/* COMPANY INFO */
 
+.company-info {
+    text-align: center;
+    margin: 30px 0 0;
+}
+
+.company-info h1 {
+    color: var(--accent1-color);
+    margin-bottom: 8px;
+}
+
+.company-info p {
+    color: var(--accent1-color);
+    margin: 2px 0;
+    line-height: 1.1;
+}
+
+/* CONTACT FORM */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.map {
+    height: 100%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    /* adjust as needed */
+    border: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.contact-form label {
+    margin: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 4px;
+}
+
+.radio-group {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.radio-group p {
+    position: relative;
+    top: 40px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin: 0 2px 0 0;
+    padding: 0;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 4px 0;
+}
+
+button {
+    padding: 8px;
+    margin-top: 4px;
+}
+
+/* EMPLOYEES */
+.employees {
+    border: 1px solid var(--accent1-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.employees h2 {
+    background: none;
+    color: var(--accent1-color);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.employee-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.employee-cards figure {
+    text-align: center;
+}
+
+.employee-cards img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.employee-cards figcaption {
+    margin-top: 8px;
+}
+
+/* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-}
 
-/* SOCIAL MEDIA */
+}
 
 .socialmedia {
     display: flex;
     gap: 10px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
 .socialmedia img {
     width: 40px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.message-section {
+    margin-top: 40px;
 }
