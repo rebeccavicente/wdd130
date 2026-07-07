@@ -27,8 +27,10 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* HEADER */
@@ -438,4 +440,89 @@ textarea {
 .trip-table th {
     background-color: var(--accent1-color);
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    header img {
+        margin: auto;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Hero */
+
+    .hero h1 {
+        position: static;
+    }
+
+    .hero article {
+        position: static;
+        margin-top: 0;
+    }
+
+    .hero article img {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto 20px;
+    }
+
+    /* History */
+
+    .history-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adventure */
+
+    .adventure-gallery {
+        flex-direction: column;
+    }
+
+    /* Contact */
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Employees */
+
+    .employee-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Home */
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Trips */
+
+    .trip-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
 }
