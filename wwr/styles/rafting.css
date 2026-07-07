@@ -87,38 +87,73 @@ article {
 /* HERO */
 
 .hero {
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    align-items: center;
+    gap: 40px;
+
+    padding: 60px 0;
+}
+
+.hero-text h1 {
+    color: var(--accent1-color);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20px;
+/* ABOUT HERO */
+
+.about-hero {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 50px;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-images img {
     width: 100%;
-    text-align: center;
-    background-color: var(--overlay-color);
-    padding: 16px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-.hero article {
-    position: absolute;
-    top: 350px;
-    left: 20px;
-    right: 20px;
-    background-color: var(--overlay-color);
-    color: var(--primary-color);
-    padding: 20px;
+.about-images img:first-child {
+    height: 320px;
 }
 
-.hero article img {
-    float: right;
-    width: 200px;
-    margin-left: 20px;
+.about-images img:last-child {
+    height: 180px;
+}
+
+.about-text h1 {
+    color: var(--accent1-color);
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 
 /* SECTION HEADERS */
@@ -444,8 +479,6 @@ textarea {
 
 @media screen and (max-width: 768px) {
 
-    /* Header */
-
     header {
         grid-template-columns: 1fr;
         text-align: center;
@@ -457,67 +490,26 @@ textarea {
     }
 
     header nav {
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    /* Hero */
-
-    .hero h1 {
-        position: static;
-    }
-
-    .hero article {
-        position: static;
-        margin-top: 0;
-    }
-
-    .hero article img {
-        float: none;
-        display: block;
-        width: 100%;
-        max-width: 250px;
-        margin: 0 auto 20px;
-    }
-
-    /* History */
-
-    .history-content {
+    .hero {
         grid-template-columns: 1fr;
+        text-align: center;
     }
 
-    /* Adventure */
-
-    .adventure-gallery {
-        flex-direction: column;
+    .hero img {
+        height: 250px;
     }
 
-    /* Contact */
-
-    .contact-container {
-        grid-template-columns: 1fr;
+    .hero-text h1 {
+        font-size: 2.2rem;
     }
-
-    /* Employees */
-
-    .employee-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Home */
 
     .home-grid {
         grid-template-columns: 1fr;
     }
-
-    /* Trips */
-
-    .trip-cards {
-        grid-template-columns: 1fr;
-    }
-
-    /* Footer */
 
     footer {
         flex-direction: column;
@@ -525,4 +517,20 @@ textarea {
         text-align: center;
     }
 
+    .about-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .about-images {
+        order: 1;
+    }
+
+    .about-text {
+        order: 2;
+        text-align: center;
+    }
+
+    .about-text h1 {
+        font-size: 2.2rem;
+    }
 }
